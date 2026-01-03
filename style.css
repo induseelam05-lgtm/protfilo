@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background: hsl(111, 83%, 52%);
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header{
+  background: #222;
+  color: #fff;
+  padding: 15px 0;
+}
+
+nav{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+}
+
+nav ul li{
+  margin: 10px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+  color: #00c6ff;
+}
+
+/* Sections */
+section{
+  width: 90%;
+  margin: 40px auto;
+}
+
+.home{
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home h2{
+  font-size: 32px;
+}
+
+/* Cards */
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card{
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer{
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  width: 100%;
+}
+
+/* Responsive */
+@media(max-width:600px){
+  nav{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home h2{
+    font-size: 26px;
+  }
+}

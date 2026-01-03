@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: #40ee46;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header{
+      background: #222;
+      color: #fff;
+      padding: 15px 0;
+    }
+
+    nav{
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul{
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li{
+      margin: 10px;
+    }
+
+    nav ul li a{
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover{
+      color: #00c6ff;
+    }
+
+    .about{
+      width: 90%;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      flex: 1;
+    }
+
+    .about h2{
+      margin-bottom: 15px;
+    }
+
+    .about p{
+      margin-bottom: 10px;
+    }
+
+    footer{
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+      width: 100%;
+    }
+
+    @media(max-width:600px){
+      nav{
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h1>My Portfolio</h1>
+    <ul>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skill.html">Skills</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="about" id="home">
+<body>
+  <h2>About Me</h2>
+  <p>Hello! I am <strong>Indu</strong>, a final year student.</p>
+  <p>I am interested in Web Development, Embedded Systems, and Python-based projects.</p>
+  <p>I enjoy learning new technologies and building beginner-friendly real-world applications.</p>
+  <p>My goal is to become a skilled software/embedded developer.</p>
+  </body>
+</section>
+
+<footer>
+  <p>© 2026 Indu | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
